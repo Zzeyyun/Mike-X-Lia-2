@@ -82,7 +82,8 @@ body {
     }
 }
 
-#mickeyFilm {#mickeyFilm {
+#mickeyFilm {
+    #mickeyFilm {
     background: url('images/mickey_film.gif') no-repeat center center;
     /* ... rest of the styling ... */
     background: url('mickey_film.gif') no-repeat center center;

@@ -1,0 +1,111 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#tapeEffect {
+    position: relative;
+}
+
+#tape {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    width: 200px;
+    height: 20px;
+    background-color: #ff0000; /* Red color */
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+#projector {
+    width: 600px;
+    height: 400px;
+    background-color: #000;
+    border: 5px solid #fff;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    filter: brightness(120%) contrast(90%) saturate(120%) blur(5px);
+}
+
+#screen {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+#message {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    color: #ff69b4; /* Pink color */
+}
+
+#flowerAnimation {
+    background: url('flowers.gif') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: flowerAnimation 5s forwards;
+    z-index: 2;
+}
+
+@keyframes flowerAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#mickeyFilm {
+    background: url('mickey_film.gif') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: mickeyFilmAnimation 10s forwards;
+    z-index: 2;
+}
+
+@keyframes mickeyFilmAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+#playButton {
+    background-color: #ff69b4; /* Pink color */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    z-index: 2;
+}
